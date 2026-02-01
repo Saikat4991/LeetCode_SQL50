@@ -4,7 +4,7 @@ class Solution:
         hashMap = {}
 
         for s in strs:
-            sorted_s = tuple(sorted(s))
+            sorted_s = "".join(sorted(s))
             if sorted_s in hashMap:
                 hashMap[sorted_s].append(s)
 
